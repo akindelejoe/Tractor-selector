@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tuba Farm Equipment | Tractor Selector</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  <link rel="stylesheet" href="tuba.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <img src="tuba2.png" alt="Tuba Farm Equipment Logo" class="logo">
+      <h1>Tuba Farm Equipment</h1>
+    </header>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Selectors</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Weather</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <section class="form-section">
+        <h2>Tractor Selector Tool</h2>  
+        <form id="tractorForm">
+          <div class="form-group">
+            <label for="acres">How many acres do you cultivate?</label>
+            <input type="number" id="acres" name="acres" placeholder="e.g. 500">
+          </div>
+
+          <div class="form-group">
+            <label>Which crops do you grow?</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" value="wheat" /> Wheat</label>
+              <label><input type="checkbox" value="corn" /> Corn</label>
+              <label><input type="checkbox" value="soy" /> Soy</label>
+              <label><input type="checkbox" value="alfalfa" /> Alfalfa</label>
+              <label><input type="checkbox" value="cotton" /> Cotton</label>
+              <label><input type="checkbox" value="sorghum" /> Sorghum</label>
+              <label><input type="checkbox" value="rice" /> Rice</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="months">How many months per year do you work your fields?</label>
+            <input type="number" id="months" name="months" min="1" max="12" placeholder="e.g. 8">
+          </div>
+
+          <div class="form-group">
+            <label>Preferred fuel source:</label>
+            <div class="radio-group">
+              <label><input type="radio" name="fuel" value="E85"> E85</label>
+              <label><input type="radio" name="fuel" value="biodiesel"> Biodiesel</label>
+              <label><input type="radio" name="fuel" value="diesel"> Diesel</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Get Recommendation</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="recommendation">
+        <h2 id="messageHead">Your Recommended Tractor:</h2>
+        <p id="message">Fill out the form to see your recommendation.</p>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Tuba Farm Equipment | Fargo, ND</p>
+    </footer>
+  </div>
+</body>
+</html>
