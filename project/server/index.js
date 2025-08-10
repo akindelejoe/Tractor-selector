@@ -37,7 +37,7 @@ app.post("/api/recommend", (req, res) => {
 
 //  Fallback route for SPA (avoids interfering with API routes)
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "index.html"));
+  res.sendFile(path.join(__dirname, "../client", "index.html"));
 });
 
 // Start the server
