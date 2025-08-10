@@ -6,11 +6,10 @@
       Variables and functions
       Author: Joseph Akindele
 
- */
+
 
 
 /* global variables tracking status of each form section */
-
 
 document.addEventListener("DOMContentLoaded", () => {
    const form = document.getElementById("tractorForm");
@@ -39,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
  
      try {
        // Send POST request to backend API endpoint
-       const res = await fetch("http://localhost:3000/api/recommend", {
+       const res = await fetch("https://tractor-selector-5.onrender.com/api/recommend", {
          method: "POST",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify(payload)
